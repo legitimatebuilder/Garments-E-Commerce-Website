@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adidas</title>
+    <link rel="stylesheet" href="./CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+    <script src="./JS/Script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-shirt"></i> adidas</a>
+
+        <ul class="nav-bar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new">New Arrival</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            <i class="fa-regular fa-user" id="user-icon"></i>
+        </div>
+
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+
+        <div class="cart">
+            <!-- Box 1 -->
+            <div class="box">
+                <!-- The image distortion in cart arose due to placing the same images in cart as in new arrivals, problem solved by replacing the cart with different images. -->
+                <img src="./CSS/Images/cart-one-red.png" alt="cart-one">
+                <div class="text">
+                    <h3>T-Shirt 12A</h3>
+                    <span>$50.05</span>
+                    <span>x1</span>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="./CSS/Images/cart-two-black.png" alt="cart-two">
+                <div class="text">
+                    <h3>T-Shirt 13B</h3>
+                    <span>$50.05</span>
+                    <span>x1</span>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+
+            <h2>Total: $100.10</h2>
+            <a href="#" class="btn">CheckOut</a>
+        </div>
+
+        <div class="user">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Your Email...">
+            <input type="password" name="" id="" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Forgot Password <a href="#">Reset Now</a></p>
+            <p>Don't have account? <a href="#">Create One</a></p>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Shop Now</span>
+            <h1>New Arrival of <br>Fresh Products</h1>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="./CSS/Images/home.png" alt="home">
+        </div>
+    </section>
+
+    <!-- New Arrival -->
+    <section class="new" id="new">
+        <div class="heading">
+            <h1>New <span>Arrivals</span></h1>
+        </div>
+        <div class="swiper new-arrivals">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./CSS/Images/new1.png" alt="new-one">
+                    <div class="content">
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./CSS/Images/new2.png" alt="new-two">
+                    <div class="content">
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./CSS/Images/new3.png" alt="new-three">
+                    <div class="content">
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./CSS/Images/new4.png" alt="new-four">
+                    <div class="content">
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./CSS/Images/new5.png" alt="new-five">
+                    <div class="content">
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./CSS/Images/new6.png" alt="new-six">
+                    <div class="content">
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="heading">
+            <h1>Our <span>Products</span></h1>
+        </div>
+        <div class="product-container">
+            <div class="box">
+                <img src="./CSS/Images/p1.jpg" alt="product-one">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p2.jpg" alt="product-two">
+                <div class="content">
+                    <h2>T-Shirt 14B</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p3.jpg" alt="product-three">
+                <div class="content">
+                    <h2>T-Shirt 14C</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p4.jpg" alt="product-four">
+                <div class="content">
+                    <h2>T-Shirt 14D</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p5.jpg" alt="product-five">
+                <div class="content">
+                    <h2>T-Shirt 14E</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p6.jpg" alt="product-six">
+                <div class="content">
+                    <h2>T-Shirt 14F</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p7.jpg" alt="product-seven">
+                <div class="content">
+                    <h2>T-Shirt 14G</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/p8.jpg" alt="product-eight">
+                <div class="content">
+                    <h2>T-Shirt 14H</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>$50.05</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <h1>Our <span>Customers</span></h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <img src="./CSS/Images/r1.jpg" alt="review-one">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorum nemo pariatur explicabo,
+                    cupiditate, dolores facilis molestias consequatur harum repellat commodi magnam suscipit illum hic
+                    error impedit! Mollitia, iusto molestiae?</p>
+                <h2>Will Smith</h2>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/r2.jpg" alt="review-two">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorum nemo pariatur explicabo,
+                    cupiditate, dolores facilis molestias consequatur harum repellat commodi magnam suscipit illum hic
+                    error impedit! Mollitia, iusto molestiae?</p>
+                <h2>Olivia Platt</h2>
+            </div>
+            <div class="box">
+                <img src="./CSS/Images/r3.jpg" alt="review-three">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorum nemo pariatur explicabo,
+                    cupiditate, dolores facilis molestias consequatur harum repellat commodi magnam suscipit illum hic
+                    error impedit! Mollitia, iusto molestiae?</p>
+                <h2>James Marsden</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>adidas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corporis at assumenda perspiciatis, quae
+                dolorem voluptate tempora ea accusantium pariatur ab, qui quibusdam! Eaque est animi ea aperiam pariatur
+                ex!</p>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ's</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Our Branches</h3>
+            <li><a href="#">Pakistan</a></li>
+            <li><a href="#">Japan</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">United States</a></li>
+            <li><a href="#">Canada</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Payment Methods</h3>
+            <div class="payment">
+                <img src="./CSS/Images/visa.png" alt="visa">
+                <img src="./CSS/Images/mastercard.png" alt="master-card">
+                <img src="./CSS/Images/paypal.png" alt="paypal">
+                <img src="./CSS/Images/american-express.png" alt="american-express">
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyrights -->
+    <div class="copy-rights">
+        <p>&#169; Waqas Ali, All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
